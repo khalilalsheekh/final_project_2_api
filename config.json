@@ -1,0 +1,51 @@
+{
+  "basic_url": "https://shazam.p.rapidapi.com",
+  "endpoints": {
+    "shazam_events_endpoint": "/shazam-events/list?artistId=73406786&l=en-US&from=2022-12-31&limit=50&offset=0&id=",
+    "search_endpoint": "/search",
+    "songs_details_endpoint": "/songs/v2/get-details",
+    "artists_endpoint": "/songs/get-related-artist",
+    "songs_count_endpoint": "/songs/get-count",
+    "songs_list_recommendation_endpoint": "/songs/list-recommendations",
+    "specific_song_details": "/songs/get-details",
+    "list_top_track_endpoint": "/songs/list-artist-top-tracks",
+    "chart_track_endpoint": "/charts/track",
+    "chart_list_endpoint": "/charts/list",
+    "songs_v2_detect_endpoint": "/songs/v2/detect",
+    "artist_details_endpoint": "/artists/get-details",
+    "artists_top_songs_endpoint": "/artists/get-top-songs",
+    "artists_latest_release_endpoint": "/artists/get-latest-release",
+    "artists_summary_endpoint": "/artists/get-summary",
+    "shazam_songs_details_endpoint" : "/shazam-songs/get-details",
+    "shazam_songs_list_similarities_endpoint": "/shazam-songs/list-similarities",
+    "albums_details_endpoint": "/albums/get-details"
+
+  },
+  "headers": {
+    "x-rapidapi-key": "2c23c33b78msh57819c261be9f67p178109jsnad97f6c7c24b",
+    "x-rapidapi-host": "shazam.p.rapidapi.com"
+  },
+  "songs_v2_detect_headers": {
+    "x-rapidapi-key": "2c23c33b78msh57819c261be9f67p178109jsnad97f6c7c24b",
+    "x-rapidapi-host": "shazam.p.rapidapi.com",
+    "Content-Type": "text/plain"
+  },
+  "query_strings": {
+    "events_query": {"artistId": "73406786", "l": "en-US", "from": "2022-12-31", "limit": "50", "offset": "0"},
+    "search_query": {"term": "kiss the rain", "locale": "en-US", "offset": "0", "limit": "5"},
+    "songs_query_details": {"id": "1217912247", "l": "en-US"},
+    "count_query": {"key": "40333609"},
+    "list_recommendation_query": {"key": "484129036", "locale": "en-US"},
+    "specific_details_query": {"key": "40333609", "locale": "en-US"},
+    "list_artist_top_track_query": {"id": "40008598", "locale": "en-US"},
+    "charts_track_query": {"locale": "en-US", "pageSize": "20", "startFrom": "0"},
+    "sound_detector_v2_query": {"timezone": "America/Chicago", "locale": "en-US"},
+    "artists_query": {"id":"567072","l":"en-US"},
+    "shazam_songs_details_query": {"id":"40333609","locale":"en-US"},
+    "shazam_songs_list_similarities_query" : {"id":"track-similarities-id-424767377","locale":"en-US"},
+    "albums_details_query": {"id":"850576570","l":"en-US"},
+    "songs_related_artists_query": {"id":"1217912247","l":"en-US"}
+
+  }
+}
+
