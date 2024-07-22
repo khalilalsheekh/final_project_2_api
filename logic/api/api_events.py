@@ -13,16 +13,3 @@ class APIEvents:
     def get_events(self, querystring):
         url = f"{self.base_url}{self.events_endpoint}"
         return self._request.get_request(url, headers=self.config["headers"], params=querystring)
-
-    @staticmethod
-    def get_event_data(event):
-        return event["data"]
-
-    def check_event_data_id(self, event, id):
-        data = self.get_event_data(event)
-        for d in data:
-            if d["id"] == id:
-                return True
-        return False
-
-    #     hits[0]["track"]["subtitle"]
