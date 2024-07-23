@@ -23,11 +23,17 @@ class TestApiSearch(unittest.TestCase):
         Test the search functionality.
         Verifies the response status and details of the first search result.
         """
+        # Arrange
         logger.info("Starting test_check_search")
         querystring = self.config['query_strings']['search_query']
+
+        # Act
         response = self.api_request.get_search(querystring)
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["tracks"]["hits"][0]["track"]["subtitle"], "Billie Myers")
         self.assertEqual(response.data["tracks"]["hits"][0]["track"]["title"], "Kiss the Rain")
         logger.info("test_check_search completed successfully")
+

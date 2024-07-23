@@ -23,9 +23,14 @@ class TestShazamSongs(unittest.TestCase):
         Test the retrieval of Shazam song details.
         Verifies the response status, song ID, and type.
         """
+        # Arrange
         logger.info("Starting test_check_shazam_songs_details_by_id_and_type")
         querystring = self.config["query_strings"]["shazam_songs_details_query"]
+
+        # Act
         response = self.api_request.get_shazam_songs_details(querystring)
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["data"][0]["id"], querystring["id"])
@@ -37,9 +42,14 @@ class TestShazamSongs(unittest.TestCase):
         Test the retrieval of similar Shazam songs.
         Verifies the response status, song list ID, and type.
         """
+        # Arrange
         logger.info("Starting test_check_shazam_songs_list_similarities")
         querystring = self.config["query_strings"]["shazam_songs_list_similarities_query"]
+
+        # Act
         response = self.api_request.get_shazam_songs_list_similarities(querystring)
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["data"][0]["id"], querystring["id"])

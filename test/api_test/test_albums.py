@@ -23,9 +23,14 @@ class TestAlbums(unittest.TestCase):
         Test the retrieval of album details.
         Verifies the response status, album ID, and type.
         """
+        # Arrange
         logger.info("Starting test_check_albums_details_by_id_and_type")
         querystring = self.config["query_strings"]["albums_details_query"]
+
+        # Act
         response = self.api_request.get_albums_details(querystring)
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["data"][0]["id"], querystring["id"])

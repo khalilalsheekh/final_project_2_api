@@ -23,10 +23,16 @@ class TestApiChartList(unittest.TestCase):
         Test the retrieval of chart list.
         Verifies the response status and details of the first country in the list.
         """
+        # Arrange
         logger.info("Starting test_check_chart_list")
+
+        # Act
         response = self.api_request.get_chart_list()
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["countries"][0]["id"], "DE")
         self.assertEqual(response.data["countries"][0]["name"], "Germany")
         logger.info("test_check_chart_list completed successfully")
+

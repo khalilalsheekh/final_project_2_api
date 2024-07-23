@@ -87,3 +87,61 @@ INFO:test_api_songs:--------------------------
 INFO:test_api_songs:Starting test_related_artist
 INFO:test_api_songs:test_related_artist completed successfully
 INFO:test_api_songs:--------------------------
+INFO:test_albums:--------------------------
+INFO:test_albums:Starting test_check_albums_details_by_id_and_type
+INFO:test_albums:test_check_albums_details_by_id_and_type completed successfully
+INFO:test_albums:--------------------------
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:Starting test_check_artists_details_by_id_and_type
+INFO:test_api_artists:test_check_artists_details_by_id_and_type completed successfully
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:Starting test_check_artists_latest_release
+INFO:test_api_artists:test_check_artists_latest_release completed successfully
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:Starting test_check_artists_summary
+INFO:test_api_artists:test_check_artists_summary completed successfully
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:--------------------------
+INFO:test_api_artists:Starting test_check_artists_top_song_by_id_and_type
+INFO:test_api_artists:test_check_artists_top_song_by_id_and_type completed successfully
+INFO:test_api_artists:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_count
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_details
+INFO:test_api_songs:test_check_songs_details completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_v2_detect_post
+INFO:test_api_songs:test_check_songs_v2_detect_post completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_specific_song_details
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_related_artist
+INFO:test_api_songs:test_related_artist completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_count
+INFO:test_api_songs:test_check_songs_count completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_details
+INFO:test_api_songs:test_check_songs_details completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_songs_v2_detect_post
+INFO:test_api_songs:test_check_songs_v2_detect_post completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_check_specific_song_details
+INFO:test_api_songs:test_check_specific_song_details completed successfully
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:--------------------------
+INFO:test_api_songs:Starting test_related_artist
+INFO:test_api_songs:test_related_artist completed successfully
+INFO:test_api_songs:--------------------------

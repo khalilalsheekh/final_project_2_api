@@ -23,10 +23,16 @@ class TestApiEvents(unittest.TestCase):
         Test the retrieval of events.
         Verifies the response status and the ID of the first event in the response.
         """
+        # Arrange
         logger.info("Starting test_check_events")
         querystring = self.config["query_strings"]["events_query"]
+
+        # Act
         response = self.api_request.get_events(querystring)
+
+        # Assert
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
-        self.assertTrue(response.data["data"][0]["id"], "599fee98-efb2-4047-8bb6-232f9b905f45")
+        self.assertEqual(response.data["data"][0]["id"], "599fee98-efb2-4047-8bb6-232f9b905f45")
         logger.info("test_check_events completed successfully")
+
