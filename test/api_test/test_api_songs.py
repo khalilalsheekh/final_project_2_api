@@ -113,4 +113,4 @@ class TestApiSongs(unittest.TestCase):
         self.assertTrue(response.ok)
         self.assertEqual(response.status, 200)
         self.assertEqual(response.data["track"]["title"], "Clint Eastwood")
-        logger.info("test_check_songs_v2_detect_post completed successfully")
+
